@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: devs.echo.EchoServiceInServerIT
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.669 sec <<< FAILURE! - in devs.echo.EchoServiceInServerIT
+devs.echo.EchoServiceInServerIT  Time elapsed: 1.669 sec  <<< ERROR!
+java.lang.IllegalStateException: Could not setup chameleon container
+Caused by: org.jboss.shrinkwrap.resolver.api.NoResolvedResultException: Unable to collect/resolve dependency tree for a resolution due to: Failed to collect dependencies at org.yaml:snakeyaml:jar:1.15, caused by: Server returned HTTP response code: 501 for URL: http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom
+Caused by: org.eclipse.aether.resolution.DependencyResolutionException: Failed to collect dependencies at org.yaml:snakeyaml:jar:1.15
+Caused by: org.eclipse.aether.collection.DependencyCollectionException: Failed to collect dependencies at org.yaml:snakeyaml:jar:1.15
+Caused by: org.eclipse.aether.resolution.ArtifactDescriptorException: Failed to read artifact descriptor for org.yaml:snakeyaml:jar:1.15
+Caused by: org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.yaml:snakeyaml:pom:1.15 from/to central (http://repo1.maven.org/maven2): Error transferring file: Server returned HTTP response code: 501 for URL: http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom from http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.yaml:snakeyaml:pom:1.15 from/to central (http://repo1.maven.org/maven2): Error transferring file: Server returned HTTP response code: 501 for URL: http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom from http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom
+Caused by: org.apache.maven.wagon.TransferFailedException: Error transferring file: Server returned HTTP response code: 501 for URL: http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom from http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom
+Caused by: java.io.IOException: Server returned HTTP response code: 501 for URL: http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom
+Caused by: java.io.IOException: Server returned HTTP response code: 501 for URL: http://repo1.maven.org/maven2/org/yaml/snakeyaml/1.15/snakeyaml-1.15.pom
+
